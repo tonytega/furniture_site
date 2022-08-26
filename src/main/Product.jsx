@@ -1,0 +1,1 @@
+export const Product = ()=><h1>Cart Page</h1>

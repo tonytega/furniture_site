@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 const  NavBar = () => {
     return ( 
         <nav className="navBar">
-            <div>
+            <div className="mainImg">
+                  <img src="img/main_logo.png" alt="company logo"/>  
+            </div>
+            <div className="navLink">       
                 <Link to="/">home</Link>
                 <Link to="/products">product</Link>
                 <Link to="/aboutus">aboutUs</Link>

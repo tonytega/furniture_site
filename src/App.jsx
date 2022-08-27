@@ -1,5 +1,5 @@
-import './App.css'
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
+import  "./Eric-myers.css"
 import NavBar from './main/Nav';
 import Home from './main/Home';
 import { Product } from './main/Product';

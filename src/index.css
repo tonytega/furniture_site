@@ -115,3 +115,11 @@ a {
     opacity: 0.02;
   }
 }
+/* ===================================
+              fixed width 
+======================================*/
+.fixedWidth {
+  width: 1200px;
+  border: 2px solid grey;
+  margin: 20px auto;
+}

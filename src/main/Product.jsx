@@ -1,1 +1,4 @@
-export const Product = ()=><h1>Cart Page</h1>
+import { AllProduct } from "./product/allProduct"
+
+
+export const Product = ({})=> <AllProduct/>

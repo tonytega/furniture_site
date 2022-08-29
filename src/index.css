@@ -31,21 +31,22 @@ h6 {
 .navBar {
   height: 100px;
   display: flex;
-  margin: 0 40px;
+  margin: 0 50px;
+  align-items: center;
 }
 .mainImg {
   display: block;
+  /* min-width: 40%; */
+  flex-grow: 1;
 }
-.mainImg {
-  width: 40%;
-}
+
 .mainImg img {
   width: 100px;
   height: 100px;
 }
-.navBar div:last-child {
+/* .navBar div:last-child {
   margin-top: 40px;
-}
+} */
 .navLink a {
   position: relative;
 }
@@ -58,7 +59,7 @@ h6 {
 }
 a {
   text-decoration: none;
-  color: inherit;
+  /* color: inherit; */
 }
 
 .navBar div a::before {
@@ -70,7 +71,7 @@ a {
   padding: 2px;
   left: 0;
   bottom: 0;
-  transform: scaley(0);
+  /* transform: scaley(0); */
   animation: 1s forwards ani1 linear;
   z-index: -1;
   border-radius: 6px;

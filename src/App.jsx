@@ -6,23 +6,42 @@ import { Product } from './main/Product';
 import AboutUS from './main/AboutUs';
 import Contact from './main/Contact';
 import { Cart } from './main/Cart';
+import {useEffect,useState,createContext} from 'react';
 
+
+export const DataContext = createContext();
 function App() {
-  
+   const [data,setData] = useState(null);
+    
+useEffect(
+  function fetchData(){
+      fetch('../data/furniture_data.json',{
+                                                            headers: { 
+                                                                      'Content-Type': 'application/json',
+                                                                        'Accept': 'application/json'
+                                                                      }
+                                                          }
+            )
+            .then((response)=>response.json())
+            .then((data)=>{setData(data)})
+            // .catch((error)=>{console.log(error)})
 
+    },[]
+)
   return (
     <div className="App">
-      <Router>
-        <NavBar/>
-        <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/products' element={<Product/>}/>
-        <Route path='/aboutUs' element={<AboutUS/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/cart' element={<Cart/>}/>
-        </Routes>
-
-      </Router>
+      <DataContext.Provider value={data}>
+        <Router>
+          <NavBar/>
+          <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/products' element={<Product data={data}/>}/>
+          <Route path='/aboutUs' element={<AboutUS/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/cart' element={<Cart/>}/>
+          </Routes>
+        </Router>
+      </DataContext.Provider>
      
     </div>
   )

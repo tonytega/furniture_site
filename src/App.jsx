@@ -12,7 +12,7 @@ import {useEffect,useState,createContext} from 'react';
 export const DataContext = createContext();
 function App() {
    const [data,setData] = useState(null);
-    
+  // console.log(data)
 useEffect(
   function fetchData(){
       fetch('../data/furniture_data.json',{

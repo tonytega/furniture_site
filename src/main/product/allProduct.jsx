@@ -1,23 +1,36 @@
 // import { Link } from "react-router-dom"
-import { BedProduct } from "./BedProduct"
-import { useContext } from "react"
+import { SelectedCategory } from "./SelectedCategory"
+import { useContext,useState } from "react"
 import { DataContext } from "..//../App"
-import { Category } from "@mui/icons-material"
 import { useEffect } from "react"
-// import { uuid} from 'uuidv4'
-
 
 export const AllProduct =()=>{
     const data = useContext(DataContext);
+    // console.log(data)
+    let dataArray;
+
+    data ? dataArray = Object.keys(data) : dataArray = null;
+  const [SelectedCategoryData,setSelectedCategoryData] = useState([]);  
+  useEffect(
+    ()=>{
+        if (data != null){setSelectedCategoryData(data.Couch) }
+    },[data]
+  )
+ 
+ const handleProductCategory = (key)=>{
+        setSelectedCategoryData(data[key])
+ }
 
     return(
         <>
         <div>
             <ul>
-                {data ? Object.keys(data).map((key)=><li>{key}</li>) : ''}
+                {data ? dataArray.map(
+                    (key)=><li key={dataArray.indexOf(key)} ><a onClick={()=>{handleProductCategory(key)}}>{key}</a></li>) 
+                    : ''}
             </ul>
         </div>
-        <BedProduct/>
+        {<SelectedCategory categoryData={SelectedCategoryData}/>}
         </>
     )
 }

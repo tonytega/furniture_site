@@ -8,7 +8,8 @@
         "material":"wood",
         "recomendedUseage":"lounge bedrooms",
         "colour":"blue",
-        "ratings":"74"    
+        "ratings":"74",
+        "cost"   : 423    
     },
     {
         "name":"sleepersofa2",
@@ -19,7 +20,8 @@
         "material":"wood",
         "recomendedUseage":"lounge bedrooms",
         "colour":"blue",
-        "ratings":"74"    
+        "ratings":"74" ,
+        "cost"   : 756     
     },
     {
         "name":"sleepersofa3",
@@ -30,7 +32,8 @@
         "material":"wood",
         "recomendedUseage":"lounge bedrooms",
         "colour":"blue",
-        "ratings":"74"    
+        "ratings":"74",
+        "cost"   : 423   
     },
     {
         "name":"sleepersofa4",
@@ -41,7 +44,8 @@
         "material":"wood",
         "recomendedUseage":"lounge bedrooms",
         "colour":"blue",
-        "ratings":"74"    
+        "ratings":"74" ,  
+        "cost"   : 978   
     },
     {
         "name":"sleepersofa5",
@@ -52,7 +56,8 @@
         "material":"wood",
         "recomendedUseage":"lounge bedrooms",
         "colour":"blue",
-        "ratings":"74"    
+        "ratings":"74" ,
+        "cost"   : 1355     
     },
     {
         "name":"sleepersofa6",
@@ -63,7 +68,8 @@
         "material":"wood",
         "recomendedUseage":"lounge bedrooms",
         "colour":"blue",
-        "ratings":"74"    
+        "ratings":"74"   ,
+        "cost"   : 2065   
     },
     {
         "name":"sleepersofa7",
@@ -74,7 +80,8 @@
         "material":"wood",
         "recomendedUseage":"lounge bedrooms",
         "colour":"blue",
-        "ratings":"74"    
+        "ratings":"74"  ,
+        "cost"   : 2000    
     },
     {
         "name":"sleepersofa8",
@@ -85,7 +92,8 @@
         "material":"wood",
         "recomendedUseage":"lounge bedrooms",
         "colour":"blue",
-        "ratings":"74"    
+        "ratings":"74",
+        "cost"   : 454  
     },
     {
         "name":"sleepersofa9",
@@ -96,7 +104,8 @@
         "material":"wood",
         "recomendedUseage":"lounge bedrooms",
         "colour":"blue",
-        "ratings":"74"    
+        "ratings":"74" ,
+        "cost"   : 786   
     },
     {
         "name":"sleepersofa10",
@@ -107,7 +116,8 @@
         "material":"wood",
         "recomendedUseage":"lounge bedrooms",
         "colour":"blue",
-        "ratings":"74"    
+        "ratings":"74"    ,
+        "cost"   : 123
     },
     {
         "name":"sleepersofa11",
@@ -118,7 +128,8 @@
         "material":"wood",
         "recomendedUseage":"lounge bedrooms",
         "colour":"blue",
-        "ratings":"74"    
+        "ratings":"74" ,
+        "cost"   : 34   
     }
 ],
     "Chairs":[{
@@ -130,7 +141,8 @@
         "material":"wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"74"      
+        "ratings":"74"   ,
+        "cost"   : 44   
     },
     {
         "name":"director chair2",
@@ -141,7 +153,9 @@
         "material":"wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"74"      
+        "ratings":"74" ,
+        "cost"   : 543  
+
     },
     {
         "name":"director chair3",
@@ -152,7 +166,8 @@
         "material":"wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"74"      
+        "ratings":"74",
+        "cost"   : 432      
     },
     {
         "name":"director chair4",
@@ -163,7 +178,8 @@
         "material":"wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"74"      
+        "ratings":"74"  ,
+        "cost"   : 65    
     },
     {
         "name":"director chair5",
@@ -174,7 +190,8 @@
         "material":"wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"74"      
+        "ratings":"74"  ,
+        "cost"   : 200    
     },
     {
         "name":"director chair6",
@@ -185,7 +202,8 @@
         "material":"wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"74"      
+        "ratings":"74" ,
+        "cost"   : 787     
     },
     {
         "name":"director chair7",
@@ -196,7 +214,8 @@
         "material":"wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"74"      
+        "ratings":"74",
+        "cost"   : 967      
     },
     {
         "name":"director chair8",
@@ -207,7 +226,8 @@
         "material":"wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"74"      
+        "ratings":"74" ,
+        "cost"   : 45     
     },
     {
         "name":"director chair9",
@@ -218,7 +238,8 @@
         "material":"wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"74"      
+        "ratings":"74" ,
+        "cost"   : 45     
     }
     
 ],
@@ -231,7 +252,8 @@
         "material":"oak wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"80" 
+        "ratings":"80" ,
+        "cost"   : 54
         
     },
     {
@@ -243,7 +265,8 @@
         "material":"oak wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"80" 
+        "ratings":"80" ,
+        "cost"   : 65
         
     },
     {
@@ -255,7 +278,8 @@
         "material":"oak wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"80" 
+        "ratings":"80" ,
+        "cost"   : 667
         
     },
     {
@@ -267,7 +291,8 @@
         "material":"oak wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"80" 
+        "ratings":"80",
+        "cost"   : 23 
         
     },
     {
@@ -279,7 +304,8 @@
         "material":"oak wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"80" 
+        "ratings":"80" ,
+        "cost"   : 200
         
     },
     {
@@ -291,7 +317,8 @@
         "material":"oak wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"80" 
+        "ratings":"80",
+        "cost"   : 200 
         
     },
     {
@@ -303,7 +330,8 @@
         "material":"oak wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"80" 
+        "ratings":"80",
+        "cost"   : 423 
         
     },
     {
@@ -315,7 +343,8 @@
         "material":"oak wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"80" 
+        "ratings":"80",
+        "cost"   : 122 
         
     },
     {
@@ -327,7 +356,8 @@
         "material":"oak wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"80" 
+        "ratings":"80",
+        "cost"   : 444
         
     },
     {
@@ -339,7 +369,8 @@
         "material":"oak wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"80" 
+        "ratings":"80" ,
+        "cost"   : 1344
         
     },
     {
@@ -351,7 +382,8 @@
         "material":"oak wood",
         "recomendedUseage":"filming ,directing ,outdoors",
         "colour":"red",
-        "ratings":"80" 
+        "ratings":"80" ,
+        "cost"   : 131
         
     }
 ],
@@ -364,7 +396,8 @@
         "material":"glass steel",
         "recomendedUseage":"lounge , offices ,receptions",
         "colour":"silver",
-        "ratings":"87" 
+        "ratings":"87" ,
+        "cost"   : 332
         
     },
     {
@@ -376,7 +409,8 @@
         "material":"glass steel",
         "recomendedUseage":"lounge , offices ,receptions",
         "colour":"silver",
-        "ratings":"87" 
+        "ratings":"87" ,
+        "cost"   : 355
         
     },
     {
@@ -388,7 +422,8 @@
         "material":"glass steel",
         "recomendedUseage":"lounge , offices ,receptions",
         "colour":"silver",
-        "ratings":"87" 
+        "ratings":"87",
+        "cost"   : 533 
         
     },
     {
@@ -400,7 +435,8 @@
         "material":"glass steel",
         "recomendedUseage":"lounge , offices ,receptions",
         "colour":"silver",
-        "ratings":"87" 
+        "ratings":"87" ,
+        "cost"   : 34
         
     },
     {
@@ -412,7 +448,8 @@
         "material":"glass steel",
         "recomendedUseage":"lounge , offices ,receptions",
         "colour":"silver",
-        "ratings":"87" 
+        "ratings":"87",
+        "cost"   : 123 
         
     },
     {
@@ -424,7 +461,8 @@
         "material":"glass steel",
         "recomendedUseage":"lounge , offices ,receptions",
         "colour":"silver",
-        "ratings":"87" 
+        "ratings":"87" ,
+        "cost"   : 643
         
     },
     {
@@ -436,7 +474,8 @@
         "material":"glass steel",
         "recomendedUseage":"lounge , offices ,receptions",
         "colour":"silver",
-        "ratings":"87" 
+        "ratings":"87",
+        "cost"   : 234 
         
     },
     {
@@ -448,7 +487,8 @@
         "material":"glass steel",
         "recomendedUseage":"lounge , offices ,receptions",
         "colour":"silver",
-        "ratings":"87" 
+        "ratings":"87",
+        "cost"   : 898 
         
     },
     {
@@ -460,7 +500,8 @@
         "material":"glass steel",
         "recomendedUseage":"lounge , offices ,receptions",
         "colour":"silver",
-        "ratings":"87" 
+        "ratings":"87",
+        "cost"   : 345 
         
     },
     {
@@ -472,7 +513,8 @@
         "material":"glass steel",
         "recomendedUseage":"lounge , offices ,receptions",
         "colour":"silver",
-        "ratings":"87" 
+        "ratings":"87",
+        "cost"   : 766 
         
     },
     {
@@ -484,7 +526,8 @@
         "material":"glass steel",
         "recomendedUseage":"lounge , offices ,receptions",
         "colour":"silver",
-        "ratings":"87" 
+        "ratings":"87",
+        "cost"   : 565 
         
     },
     {
@@ -496,7 +539,8 @@
         "material":"glass steel",
         "recomendedUseage":"lounge , offices ,receptions",
         "colour":"silver",
-        "ratings":"87" 
+        "ratings":"87" ,
+        "cost"   : 43
         
     }
 ],
@@ -509,7 +553,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,library , offices ,receptions",
         "colour":"silver",
-        "ratings":"76" 
+        "ratings":"76" ,
+        "cost"   : 111
         
     },
     {
@@ -521,7 +566,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,library , offices ,receptions",
         "colour":"silver",
-        "ratings":"76" 
+        "ratings":"76" ,
+        "cost"   : 533
         
     },
     {
@@ -533,7 +579,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,library , offices ,receptions",
         "colour":"silver",
-        "ratings":"76" 
+        "ratings":"76",
+        "cost"   : 124 
         
     },
     {
@@ -545,7 +592,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,library , offices ,receptions",
         "colour":"silver",
-        "ratings":"76" 
+        "ratings":"76" ,
+        "cost"   : 788
         
     },
     {
@@ -557,7 +605,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,library , offices ,receptions",
         "colour":"silver",
-        "ratings":"76" 
+        "ratings":"76" ,
+        "cost"   : 1230
         
     },
     {
@@ -569,7 +618,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,library , offices ,receptions",
         "colour":"silver",
-        "ratings":"76" 
+        "ratings":"76" ,
+        "cost"   : 2540
         
     },
     {
@@ -581,7 +631,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,library , offices ,receptions",
         "colour":"silver",
-        "ratings":"76" 
+        "ratings":"76" ,
+        "cost"   : 3400
         
     },
     {
@@ -593,7 +644,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,library , offices ,receptions",
         "colour":"silver",
-        "ratings":"76" 
+        "ratings":"76" ,
+        "cost"   : 280
         
     },
     {
@@ -605,7 +657,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,library , offices ,receptions",
         "colour":"silver",
-        "ratings":"76" 
+        "ratings":"76" ,
+        "cost"   : 250
         
     },
     {
@@ -617,7 +670,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,library , offices ,receptions",
         "colour":"silver",
-        "ratings":"76" 
+        "ratings":"76" ,
+        "cost"   : 20
         
     },
     {
@@ -629,7 +683,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,library , offices ,receptions",
         "colour":"silver",
-        "ratings":"76" 
+        "ratings":"76" ,
+        "cost"   : 27
         
     },
     {
@@ -641,7 +696,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,library , offices ,receptions",
         "colour":"silver",
-        "ratings":"76" 
+        "ratings":"76",
+        "cost"   : 26
         
     }
 ],
@@ -655,7 +711,8 @@
             "material":"oak wood",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"silver",
-            "ratings":"79" 
+            "ratings":"79" ,
+            "cost"   : 205
             
         },
         {
@@ -667,7 +724,8 @@
             "material":"oak wood",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"silver",
-            "ratings":"79" 
+            "ratings":"79" ,
+            "cost"   : 207
             
         },
         {
@@ -679,7 +737,8 @@
             "material":"oak wood",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"silver",
-            "ratings":"79" 
+            "ratings":"79" ,
+            "cost"   : 209
             
         },
         {
@@ -691,7 +750,8 @@
             "material":"oak wood",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"silver",
-            "ratings":"79" 
+            "ratings":"79" ,
+            "cost"   : 280
             
         },
         {
@@ -703,7 +763,8 @@
             "material":"oak wood",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"silver",
-            "ratings":"79" 
+            "ratings":"79" ,
+            "cost"   : 200
             
         },
         {
@@ -715,7 +776,8 @@
             "material":"oak wood",
             "recomendedUseage":"bedroom ,receptions7",
             "colour":"silver",
-            "ratings":"79" 
+            "ratings":"79" ,
+            "cost"   : 170
             
         },
         { 
@@ -727,7 +789,8 @@
             "material":"oak wood",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"silver",
-            "ratings":"79" 
+            "ratings":"79" ,
+            "cost"   : 130
             
         },
         {
@@ -739,7 +802,8 @@
             "material":"oak wood",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"silver",
-            "ratings":"79" 
+            "ratings":"79" ,
+            "cost"   : 20
             
         },
         {
@@ -751,7 +815,8 @@
             "material":"oak wood",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"silver",
-            "ratings":"79" 
+            "ratings":"79" ,
+            "cost"   : 240
             
         },
         {
@@ -763,7 +828,8 @@
             "material":"oak wood",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"silver",
-            "ratings":"79" 
+            "ratings":"79" ,
+            "cost"   : 210
             
         },
         {
@@ -775,7 +841,8 @@
             "material":"oak wood",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"silver",
-            "ratings":"79" 
+            "ratings":"79" ,
+            "cost"   : 203
             
         },
         {
@@ -787,7 +854,8 @@
             "material":"oak wood",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"silver",
-            "ratings":"79" 
+            "ratings":"79" ,
+            "cost"   : 280
             
         }
         
@@ -801,7 +869,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,receptions",
         "colour":"black",
-        "ratings":"65" 
+        "ratings":"65" ,
+        "cost"   : 700
         
     },
     {
@@ -813,7 +882,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,receptions",
         "colour":"black",
-        "ratings":"65" 
+        "ratings":"65" ,
+        "cost"   : 700
         
     },
     {
@@ -825,7 +895,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,receptions",
         "colour":"black",
-        "ratings":"65" 
+        "ratings":"65" ,
+        "cost"   : 500
         
     },
     {
@@ -837,7 +908,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,receptions",
         "colour":"black",
-        "ratings":"65" 
+        "ratings":"65" ,
+        "cost"   : 240
         
     },
     {
@@ -849,7 +921,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,receptions",
         "colour":"black",
-        "ratings":"65" 
+        "ratings":"65" ,
+        "cost"   : 280
         
     },
     {
@@ -861,7 +934,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,receptions",
         "colour":"black",
-        "ratings":"65" 
+        "ratings":"65" ,
+        "cost"   : 150
         
     },
     {
@@ -873,7 +947,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,receptions",
         "colour":"black",
-        "ratings":"65" 
+        "ratings":"65" ,
+        "cost"   : 230
         
     },
     {
@@ -885,7 +960,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,receptions",
         "colour":"black",
-        "ratings":"65" 
+        "ratings":"65" ,
+        "cost"   : 230
         
     },
     {
@@ -897,7 +973,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,receptions",
         "colour":"black",
-        "ratings":"65" 
+        "ratings":"65" ,
+        "cost"   : 280
         
     },
     {
@@ -909,7 +986,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,receptions",
         "colour":"black",
-        "ratings":"65" 
+        "ratings":"65" ,
+        "cost"   : 270
         
     },
     {
@@ -921,7 +999,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,receptions",
         "colour":"black",
-        "ratings":"65" 
+        "ratings":"65" ,
+        "cost"   : 200
         
     },
     {
@@ -933,7 +1012,8 @@
         "material":"oak wood",
         "recomendedUseage":"bedroom ,receptions",
         "colour":"black",
-        "ratings":"65" 
+        "ratings":"65" ,
+        "cost"   : 200
         
     }
 ],
@@ -947,7 +1027,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"brown and white",
-            "ratings":"78" 
+            "ratings":"78" ,
+            "cost"   : 200
             
         },
         {
@@ -959,7 +1040,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"brown and white",
-            "ratings":"78" 
+            "ratings":"78" ,
+            "cost"   : 200
             
         },
         {
@@ -971,7 +1053,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"brown and white",
-            "ratings":"78" 
+            "ratings":"78" ,
+            "cost"   : 20
             
         },
         {
@@ -983,7 +1066,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"brown and white",
-            "ratings":"78" 
+            "ratings":"78" ,
+            "cost"   : 20
             
         },
         {
@@ -995,7 +1079,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"brown and white",
-            "ratings":"78" 
+            "ratings":"78" ,
+            "cost"   : 200
             
         },
         {
@@ -1007,7 +1092,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"brown and white",
-            "ratings":"78" 
+            "ratings":"78" ,
+            "cost"   : 200
             
         },
         {
@@ -1019,7 +1105,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"brown and white",
-            "ratings":"78" 
+            "ratings":"78" ,
+            "cost"   : 200
             
         },
         {
@@ -1031,7 +1118,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"brown and white",
-            "ratings":"78" 
+            "ratings":"78" ,
+            "cost"   : 200
             
         },
         {
@@ -1043,7 +1131,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"brown and white",
-            "ratings":"78" 
+            "ratings":"78",
+            "cost"   : 2300 
             
         },
         {
@@ -1055,7 +1144,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"brown and white",
-            "ratings":"78" 
+            "ratings":"78" ,
+            "cost"   : 2790
             
         },
         {
@@ -1067,7 +1157,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"brown and white",
-            "ratings":"78" 
+            "ratings":"78" ,
+            "cost"   : 300
             
         },
         {
@@ -1079,7 +1170,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"bedroom ,receptions",
             "colour":"brown and white",
-            "ratings":"78" 
+            "ratings":"78" ,
+            "cost"   : 700
             
         }
         
@@ -1093,7 +1185,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"bedroom ,receptions",
             "colour":" white",
-            "ratings":"89" 
+            "ratings":"89" ,
+            "cost"   : 200
     },
     {
         "name":"geometric bookcase 2", 
@@ -1104,7 +1197,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"beedroom ,receptions, offices",
             "colour":" white",
-            "ratings":"89" 
+            "ratings":"89" ,
+            "cost"   : 290
     },
     {
         "name":"geometric bookcase 3", 
@@ -1115,7 +1209,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"beedroom ,receptions, offices",
             "colour":" white",
-            "ratings":"89" 
+            "ratings":"89",
+            "cost"   : 800 
     },
     {
         "name":"geometric bookcase 4", 
@@ -1126,7 +1221,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"beedroom ,receptions, offices",
             "colour":" white",
-            "ratings":"89" 
+            "ratings":"89" ,
+            "cost"   : 20
     },
     {
         "name":"geometric bookcase 5", 
@@ -1137,7 +1233,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"beedroom ,receptions, offices",
             "colour":" white",
-            "ratings":"89" 
+            "ratings":"89" ,
+            "cost"   : 290
     },
     {
         "name":"geometric bookcase 6", 
@@ -1148,7 +1245,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"beedroom ,receptions, offices",
             "colour":" white",
-            "ratings":"89" 
+            "ratings":"89" ,
+            "cost"   : 220
     },
     {
         "name":"geometric bookcase 7", 
@@ -1159,7 +1257,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"beedroom ,receptions, offices",
             "colour":" white",
-            "ratings":"89" 
+            "ratings":"89" ,
+            "cost"   : 200
     },
     {
         "name":"geometric bookcase 8", 
@@ -1170,7 +1269,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"beedroom ,receptions, offices",
             "colour":" white",
-            "ratings":"89" 
+            "ratings":"89" ,
+            "cost"   : 200
     },
     {
         "name":"geometric bookcase 9", 
@@ -1181,7 +1281,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"beedroom ,receptions, offices",
             "colour":" white",
-            "ratings":"89" 
+            "ratings":"89" ,
+            "cost"   : 90
     },
     {
         "name":"geometric bookcase 10", 
@@ -1192,7 +1293,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"beedroom ,receptions, offices",
             "colour":" white",
-            "ratings":"89" 
+            "ratings":"89" ,
+            "cost"   : 10
     },
     {
         "name":"geometric bookcase 11", 
@@ -1203,7 +1305,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"beedroom ,receptions, offices",
             "colour":" white",
-            "ratings":"89" 
+            "ratings":"89" ,
+            "cost"   : 210
     },
     {
         "name":"geometric bookcase 12", 
@@ -1214,7 +1317,8 @@
             "material":"oak wood and steel",
             "recomendedUseage":"beedroom ,receptions, offices",
             "colour":" white",
-            "ratings":"89" 
+            "ratings":"89" ,
+            "cost"   : 25
     }
 ],
     "Dinning Table":[
@@ -1227,7 +1331,8 @@
                 "material":"oak wood and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"brown",
-                "ratings":"70" 
+                "ratings":"70",
+                "cost"   : 280 
         },
         {
             "name":"dinningTable 5 set 2", 
@@ -1238,7 +1343,8 @@
                 "material":"oak wood and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"brown",
-                "ratings":"70" 
+                "ratings":"70" ,
+                "cost"   : 200
         },
         {
             "name":"dinningTable 5 set 3", 
@@ -1249,7 +1355,8 @@
                 "material":"oak wood and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"brown",
-                "ratings":"70" 
+                "ratings":"70" ,
+                "cost"   : 200
         },
         {
             "name":"dinningTable 5 set 4", 
@@ -1260,7 +1367,8 @@
                 "material":"oak wood and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"brown",
-                "ratings":"70" 
+                "ratings":"70" ,
+                "cost"   : 200
         },
         {
             "name":"dinningTable 5 set 5", 
@@ -1271,7 +1379,8 @@
                 "material":"oak wood and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"brown",
-                "ratings":"70" 
+                "ratings":"70" ,
+                "cost"   : 250
         },
         {
             "name":"dinningTable 5 set 6", 
@@ -1282,7 +1391,8 @@
                 "material":"oak wood and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"brown",
-                "ratings":"70" 
+                "ratings":"70" ,
+                "cost"   : 223
         },
         {
             "name":"dinningTable 5 set 7", 
@@ -1293,7 +1403,8 @@
                 "material":"oak wood and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"brown",
-                "ratings":"70" 
+                "ratings":"70" ,
+                "cost"   : 600
         },
         {
             "name":"dinningTable 5 set 8", 
@@ -1304,7 +1415,8 @@
                 "material":"oak wood and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"brown",
-                "ratings":"70" 
+                "ratings":"70" ,
+                "cost"   : 300
         },
         {
             "name":"dinningTable 5 set 9", 
@@ -1315,7 +1427,8 @@
                 "material":"oak wood and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"brown",
-                "ratings":"70" 
+                "ratings":"70" ,
+                "cost"   : 1200
         },
         {
             "name":"dinningTable 5 set 10", 
@@ -1326,7 +1439,8 @@
                 "material":"oak wood and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"brown",
-                "ratings":"70" 
+                "ratings":"70" ,
+                "cost"   : 100
         },
         {
             "name":"dinningTable 5 set 11", 
@@ -1337,7 +1451,8 @@
                 "material":"oak wood and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"brown",
-                "ratings":"70" 
+                "ratings":"70",
+                "cost"   : 800 
         },
         {
             "name":"dinningTable 5 set 12", 
@@ -1348,7 +1463,8 @@
                 "material":"oak wood and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"brown",
-                "ratings":"70" 
+                "ratings":"70",
+                "cost"   : 2020 
         }
     ],
     "Bench":[{
@@ -1360,7 +1476,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"grey",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 10
         
     },
     {
@@ -1372,7 +1489,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"grey",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 240
         
     },
     {
@@ -1384,7 +1502,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"grey",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 200
         
     },
     {
@@ -1396,7 +1515,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"grey",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 20
         
     },
     {
@@ -1408,7 +1528,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"grey",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 800
         
     },
     {
@@ -1420,7 +1541,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"grey",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 2060
         
     },
     {
@@ -1432,7 +1554,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"grey",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 20
         
     },
     {
@@ -1444,7 +1567,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"grey",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 24
         
     },
     {
@@ -1456,7 +1580,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"grey",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 200
         
     },
     {
@@ -1468,7 +1593,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"grey",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 200
         
     },
     {
@@ -1480,7 +1606,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"grey",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 200
         
     },
     {
@@ -1492,7 +1619,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"grey",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 1200
         
     }
 ],
@@ -1505,7 +1633,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"black",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 3200
     },
     {
         "name":"malilbu arm chair + cushion 2", 
@@ -1516,7 +1645,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"black",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 2500
     },
     {
         "name":"malilbu arm chair + cushion 3", 
@@ -1527,7 +1657,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"black",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 100
     },
     {
         "name":"malilbu arm chair + cushion 4", 
@@ -1538,7 +1669,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"black",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 2300
     },
     {
         "name":"malilbu arm chair + cushion 5", 
@@ -1549,7 +1681,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"black",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 1200
     },
     {
         "name":"malilbu arm chair + cushion 6", 
@@ -1560,7 +1693,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"black",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 270
     },
     {
         "name":"malilbu arm chair + cushion 7", 
@@ -1571,7 +1705,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"black",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 50
     },
     {
         "name":"malilbu arm chair + cushion 8", 
@@ -1582,7 +1717,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"black",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 2040
     },
     {
         "name":"malilbu arm chair + cushion 9", 
@@ -1593,7 +1729,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"black",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 2020
     },
     {
         "name":"malilbu arm chair + cushion 10", 
@@ -1604,7 +1741,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"black",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 20
     },
     {
         "name":"malilbu arm chair + cushion 11", 
@@ -1615,7 +1753,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"black",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 1200
     },
     {
         "name":"malilbu arm chair + cushion 12", 
@@ -1626,7 +1765,8 @@
                 "material":"oak, wood, foam and steel",
                 "recomendedUseage":"dinning room ,meeting room, offices",
                 "colour":"black",
-                "ratings":"74"
+                "ratings":"74",
+                "cost"   : 5200
     }
 ]
 }

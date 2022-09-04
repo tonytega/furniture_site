@@ -13,11 +13,10 @@ import Auth from './main/log/Auth';
 import {useEffect,useState,createContext} from 'react';
 >>>>>>> 414250be7690521aaf3488604d9f0f01ea1174e9
 
-
 export const DataContext = createContext();
 function App() {
+  const [cartArray,setCartArray] = useState([]) ;
    const [data,setData] = useState(null);
-  // console.log(data)
 useEffect(
   function fetchData(){
       fetch('../data/furniture_data.json',{
@@ -29,10 +28,59 @@ useEffect(
             )
             .then((response)=>response.json())
             .then((data)=>{setData(data)})
-            // .catch((error)=>{console.log(error)})
-
-    },[]
+    },[cartArray]
 )
+
+const array = cartArray.slice()
+const handleAddToCart =(item)=>{
+             const inArray = array.find((element)=>{
+                    return element.name === item.name  
+                })
+                if(inArray === undefined){
+                         const obj = {
+                                  name : item.name,
+                                  number : 1,
+                                  image : item.image1,
+                                  cost : item.cost,
+                                  total : item.cost,
+                                  color : item.colour
+                                }
+                  array.push(obj)
+                  setCartArray(array)
+                  }else{
+                      inArray.number = inArray.number+1;
+                      inArray.total = inArray.cost * inArray.number
+                      setCartArray(array)
+                  }
+                }
+
+const handleIncrease =(item)=>{
+  const inArray = array.find(
+        (element)=>(
+          element.name === item.name
+        )
+  )
+          inArray.number = inArray.number+1;
+          inArray.total = inArray.total + inArray.cost
+          setCartArray(array)
+
+}
+const handleDecrease =(item)=>{
+  const inArray = array.find(
+        (element)=>(
+          element.name === item.name
+        )
+  )
+        if(!(inArray.number <= 1)){
+          inArray.number = inArray.number - 1
+          inArray.total = inArray.total - inArray.cost
+
+        }else{
+           array.splice(array.indexOf(inArray),1);
+           setCartArray(array)
+        }
+
+}
   return (
     <div className="App">
 <<<<<<< HEAD
@@ -54,10 +102,10 @@ useEffect(
           <NavBar/>
           <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/products' element={<Product data={data}/>}/>
+          <Route path='/products' element={<Product  handleAddToCart={handleAddToCart}/>}/>
           <Route path='/aboutUs' element={<AboutUS/>}/>
           <Route path='/contact' element={<Contact/>}/>
-          <Route path='/cart' element={<Cart/>}/>
+          <Route path='/cart' element={<Cart cartArray={cartArray} onIncrease={handleIncrease} onDecrease={handleDecrease}/>}/>
           </Routes>
         </Router>
       </DataContext.Provider>

@@ -4,7 +4,7 @@ import { useContext,useState } from "react"
 import { DataContext } from "..//../App"
 import { useEffect } from "react"
 
-export const AllProduct =()=>{
+export const AllProduct =({handleAddToCart})=>{
     const data = useContext(DataContext);
     // console.log(data)
     let dataArray;
@@ -30,7 +30,7 @@ export const AllProduct =()=>{
                     : ''}
             </ul>
         </div>
-        {<SelectedCategory categoryData={SelectedCategoryData}/>}
+        {<SelectedCategory categoryData={SelectedCategoryData} handleAddToCart={handleAddToCart}/>}
         </>
     )
 }

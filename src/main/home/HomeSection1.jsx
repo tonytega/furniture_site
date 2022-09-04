@@ -1,9 +1,13 @@
+import MainImageSlider from "./MainImageSlider";
+import OfferSllider from "./OfferSlider";
+import ProductCategories from "./ProductCategories";
+
 const HomeSection1 = () => {
     return ( 
         <section className="homeSection1 fixedWidth">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div><ProductCategories/></div>
+            <div><MainImageSlider/></div>
+            <div><OfferSllider/></div>
         </section>
      );
 }

@@ -1,11 +1,12 @@
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica Neue, Arial, sans-serif;
   background-color: rgba(246, 240, 227, 0.668);
 }
 * {
   margin: 0;
   font-family: helvetica;
-  color: #333;
+  box-sizing: border-box;
 }
 h1 {
   font-size: 20px;
@@ -25,49 +26,64 @@ h5 {
 h6 {
   font-size: 10px;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* ===================================
                   nav bar 
 ======================================*/
-.navBar {
-  height: 100px;
-  display: flex;
-  margin: 0 40px;
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
-.mainImg {
-  display: block;
+.navBack {
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 8px;
+  /* background-color: #fff; */
+}
+.navBar {
+  display: inline-block;
+  width: 60%;
+  position: absolute;
+  bottom: 60%;
 }
 .mainImg {
   width: 40%;
+  display: inline-block;
 }
 .mainImg img {
   width: 100px;
-  height: 100px;
+  max-width: 100%;
 }
-.navBar div:last-child {
-  margin-top: 40px;
-}
+
 .navLink a {
   position: relative;
-}
-.navBar div a {
+  padding-top: 6px;
   border-radius: 8px;
+  color: black;
   margin: 20px;
   padding: 4px;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 17px;
+  z-index: 1;
 }
-a {
-  text-decoration: none;
-  color: inherit;
+.navLink {
+  display: inline-block;
 }
 
-.navBar div a::before {
+.navLink a::before {
   content: " ";
   position: absolute;
   background: #9a9a9a;
   width: 100%;
-  height: 2px;
-  padding: 2px;
+  height: 1px;
   left: 0;
   bottom: 0;
   transform: scaley(0);
@@ -75,25 +91,25 @@ a {
   z-index: -1;
   border-radius: 6px;
 }
-.navBar div a:hover::before,
-.navBar div a:focus::before {
+.navLink a:hover::before,
+.navLink a:focus::before {
   animation: 0.5s forwards ani2 linear;
 }
 @keyframes ani2 {
   0% {
     transform: scaleX(0);
-    height: 5px;
+    height: 0%;
   }
   45% {
     transform: scaleX(1);
-    height: 5px;
+    height: 45%;
   }
   55% {
-    height: 5px;
+    height: 55%;
   }
   100% {
     transform: scaleX(1);
-    height: 20px;
+    height: 100%;
   }
 }
 @keyframes ani1 {
@@ -115,11 +131,115 @@ a {
     opacity: 0.02;
   }
 }
+.userItm {
+  margin-left: 60px;
+  display: inline-block;
+  color: black;
+}
+.userItm div,
+.userItm a {
+  text-transform: uppercase;
+  margin-left: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+}
+.itm {
+  margin-left: 4px;
+}
+.miniNav {
+  flex-direction: column;
+  background-color: gainsboro;
+  color: #333;
+  position: absolute;
+  border-radius: 8px;
+  top: 20px;
+  padding: 4px;
+  right: 110px;
+  z-index: 1;
+}
+.miniNav a {
+  display: flex;
+  padding: 6px;
+  font-size: 14px;
+}
+.miniNav a:last-child {
+  background-color: aliceblue;
+  width: 100;
+  padding: 8px;
+  border-radius: 10px;
+  margin-left: 0px;
+}
+.search {
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 58%;
+  left: 77%;
+  background-color: rgb(228, 224, 224);
+  z-index: 0;
+}
+.search input {
+  border-radius: 4px;
+  width: 250px;
+  border: 0px;
+  padding: 5px;
+}
+.search > * {
+  margin: 2px;
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .navBack,
+  .navBar {
+    width: 100%;
+  }
+  .navLink a {
+    padding-top: 6px;
+    margin: 3px;
+    font-size: 13px;
+  }
+  .mainImg {
+    width: 20%;
+    display: inline-block;
+  }
+  .navBar {
+    display: flex;
+    width: 80%;
+    left: 10px;
+    flex-direction: column;
+    bottom: 30%;
+  }
+
+  .userItm div,
+  .userItm a {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .miniNav {
+    top: 35px;
+    z-index: 1;
+  }
+  .search {
+    top: 90%;
+    right: 40%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+  .search input {
+    width: 80%;
+  }
+}
 /* ===================================
               fixed width 
 ======================================*/
 .fixedWidth {
   width: 1200px;
-  border: 2px solid grey;
   margin: 20px auto;
+  display: flex;
 }

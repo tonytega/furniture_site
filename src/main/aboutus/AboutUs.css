@@ -1,5 +1,5 @@
 .aboutUs {
-  background-color: rgb(81, 88, 98, 0.5);
+  background-color: rgb(163, 163, 163, 0.8);
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
@@ -47,51 +47,181 @@
 /* ================================
             AboutUs-Section2
 ==================================*/
-.AboutUs-Section2 {
-  padding: 40px 25%;
+.AboutUs-imgSection {
+  height: 300px;
+  /* border: 1px solid red; */
+  margin: 30px 5%;
+  display: flex;
+}
+.AboutUs-imgSection1 {
+  /* border: 1px solid green; */
+  height: 300px;
+  width: 50%;
+  padding: 5% 5%;
+}
+.AboutUs-imgSection1 h2 {
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.AboutUs-imgSection2 {
+  width: 50%;
+  /* border: 1px solid grey; */
+}
+.AboutUs-imgSection2 img {
+  width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+}
+/* ================================
+          aboutUs-Section5
+==================================*/
+.aboutUs-Section5 {
+  /* border: 1px solid red; */
+  height: 400px;
+  margin: 30px 5%;
+  margin-bottom: 0;
+}
+.aboutUs-Section5 > div:first-child {
+  width: 100%;
+}
+
+.aboutUs-Section5 > div:first-child > div:first-child {
+  width: 40%;
+  float: left;
+  /* border: 1px solid red; */
+}
+.aboutUs-Section5 > div:first-child > div:first-child h2 {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.aboutUs-Section5 > div:first-child > div:first-child p {
+  font-size: 14px;
+}
+.aboutUs-Section5 > div:first-child > div:last-child {
+  width: 60%;
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: flex-end;
+}
+.aboutUs-Section5 > div:first-child div:last-child button {
+  margin-top: 40px;
+}
+
+.aboutUs-Section5 > div:first-child {
+  /* border: 1px solid black; */
+  display: inline-block;
+  max-height: fit-content;
+  min-width: 10%;
+}
+.aboutUs-ImgSection5 > div:first-child {
+  max-width: 50%;
+  padding-right: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  display: inline-block;
 }
-.AboutUs-Section2 > h1 {
-  font-size: 30px;
-  text-align: left;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-.AboutUs-Section2 p {
-  margin-bottom: 20px;
-  line-height: 20px;
+.aboutUs-ImgSection5 > div:first-child > img {
+  max-width: 95%;
+  margin: 10px 0;
+  border-radius: 12px;
 }
 
-/* ================================
-            AboutUs-Section3
-==================================*/
-.aboutus-Section3 {
-  /* border: 1px solid blue; */
-  height: 200px;
+.aboutUs-ImgSection5S {
+  /* border: 1px solid black; */
+  margin-top: 10px;
+  display: inline-block;
+  width: 100%;
   display: flex;
 }
-.aboutus-Section3 > div {
-  width: 25%;
+.aboutUs-ImgSection5s-first {
+  min-width: 490px;
   /* border: 1px solid red; */
-  height: 100%;
+  height: 250px;
 }
-
-.aboutus-Section3 > div > img {
+.fitImg {
+  width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+}
+.aboutUs-ImgSection5S-second {
+  width: 490px;
+  /* border: 1px solid blue; */
+  display: inline-block;
+  margin-left: auto;
+  height: 250px;
+}
+.aboutUs-section5S-child-div {
+  width: 50%;
+  height: 50%;
+  max-height: 50%;
+  padding: 4px;
+  white-space: nowrap;
+  /* border: 1px solid red; */
+  display: inline-block;
+  position: relative;
+}
+.aboutUs-section5S-child-div > h3 {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  color: rgb(232, 219, 219);
+}
+.aboutUs-ImgSection5S-second div img {
   width: 100%;
   height: 100%;
+
+  border-radius: 12px;
+}
+.aboutUsFixedWidth {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* ================================
+            AboutUs-Section6
+==================================*/
+.aboutUS-section6 {
+  /* border: 1px solid purple; */
+  display: inline-block;
+  min-height: 200px;
+  width: 100%;
+}
+.aboutUS-section6 > div {
+  display: inline-block;
+  /* border: 1px solid green; */
+  max-width: 300px;
+  margin-right: 49px;
+  background-color: rgba(227, 230, 235, 0.8);
+  height: 200px;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+.aboutUS-section6 > div:last-child {
+  margin-right: 0;
+}
+.aboutUS-section6 > div > h3 {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.aboutUS-section6 > div > p {
+  font-size: 14px;
+  line-height: 17px;
 }
 /* ================================
             AboutUs-Section4
 ==================================*/
 .AboutUs-Section4 {
+  display: inline-block;
   background: url("../img/spacejoy-RqO6kwm4tZY-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
+  min-height: 100%;
   height: 1000px;
   /* border: 1px solid red; */
   position: relative;
@@ -104,8 +234,8 @@
 }
 .AboutUs-Section4 > div > div {
   background-color: rgba(227, 230, 235, 0.8);
-  width: 22%;
-  height: 400px;
+  max-width: 280px;
+  max-height: 400px;
   margin: 40px 0;
   border-radius: 8px;
   display: flex;
@@ -116,8 +246,8 @@
 .AboutUs-Section4 > div > div > div:first-child {
   background-color: black;
   border-radius: 70px;
-  width: 100px;
-  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
   margin: 10px 0;
   display: flex;
   align-items: center;

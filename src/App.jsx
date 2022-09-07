@@ -6,12 +6,9 @@ import { Product } from './main/Product';
 import AboutUS from './main/AboutUs';
 import Contact from './main/Contact';
 import { Cart } from './main/Cart';
-<<<<<<< HEAD
 import Footer from './main/Footer';
-import Auth from './main/log/Auth';
-=======
+import Auth from './main/Auth';
 import {useEffect,useState,createContext} from 'react';
->>>>>>> 414250be7690521aaf3488604d9f0f01ea1174e9
 
 export const DataContext = createContext();
 function App() {
@@ -83,33 +80,20 @@ const handleDecrease =(item)=>{
 }
   return (
     <div className="App">
-<<<<<<< HEAD
+       <DataContext.Provider value={data}>
       <Router>
         <NavBar/>
         <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/products' element={<Product/>}/>
+        <Route path='/auth/*' element={<Auth/>}/>
+        <Route path='/products' element={<Product  handleAddToCart={handleAddToCart}/>}/>
         <Route path='/aboutUs' element={<AboutUS/>}/>
         <Route path='/contact' element={<Contact/>}/>
-        <Route path='/cart' element={<Cart/>}/>
-        <Route path='/auth/*' element={<Auth/>}/>
+        <Route path='/cart' element={<Cart cartArray={cartArray} onIncrease={handleIncrease} onDecrease={handleDecrease}/>}/>
         </Routes>
         <Footer/>
       </Router>
-=======
-      <DataContext.Provider value={data}>
-        <Router>
-          <NavBar/>
-          <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/products' element={<Product  handleAddToCart={handleAddToCart}/>}/>
-          <Route path='/aboutUs' element={<AboutUS/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='/cart' element={<Cart cartArray={cartArray} onIncrease={handleIncrease} onDecrease={handleDecrease}/>}/>
-          </Routes>
-        </Router>
       </DataContext.Provider>
->>>>>>> 414250be7690521aaf3488604d9f0f01ea1174e9
      
     </div>
   )

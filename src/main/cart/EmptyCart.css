@@ -1,35 +1,33 @@
-.empty_cart_div{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    /* background-color: red; */
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
+.empty_cart_div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
 }
-div img{
-    /* background-color: red; */
-    width: 250px;
+/* div img{
+    /background-color: red;     anthony herreeeeeee div img affecting every one
+     width: 250px;
     height: 250px;
-}
+} */
 
 .empty_cart_p {
-    font-size: xx-large;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+  font-size: xx-large;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.empty_cart_button{
-    background-color: black;
-    color: #fff;
-    font-size: larger;
-    border-width: 0px;
-    padding:20px;
-    transition: .5 ease-in;
-
+.empty_cart_button {
+  background-color: black;
+  color: #fff;
+  font-size: larger;
+  border-width: 0px;
+  padding: 20px;
+  transition: 0.5 ease-in;
 }
-.empty_cart_button:hover{
-    color: #fff;
-    background-color: #800080;
+.empty_cart_button:hover {
+  color: #fff;
+  background-color: #800080;
 }

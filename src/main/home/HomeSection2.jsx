@@ -25,25 +25,25 @@ const HomeSection2 = () => {
 
     return ( 
         <section className="horSlider fixedWidth-Homesection homeSection2 fixedWidth">
-            <div  className="rBtn rBtn1" onClick={slideLeft}>
-            <HiOutlineChevronDoubleLeft/>
-            </div>
+            <div></div>
             <div className="cover">
+                <div  className="rBtn homeSection2-btn-left" onClick={slideLeft}>
+                    <HiOutlineChevronDoubleLeft size={25}/>
+                </div>
                 <div id= "slider" className="scroll-images">
                     {images.map((each)=>{
                         return(
                             <motion.div whileHover={{scale:1.1}} className="child"><img src={each}alt="categories"/></motion.div>
 
                         )
-                       
-                    })}
-                    
-                    
-                    
+                    })}   
+                </div>
+                <div   className="rBtn homeSection2-btn-right" onClick={slideRight}>
+                <HiOutlineChevronDoubleRight size={25}/>
                 </div>
             </div>
-            <div  className="rBtn rBtn2" onClick={slideRight}>
-            <HiOutlineChevronDoubleRight />
+            <div>
+            
             </div>
         </section>
      );

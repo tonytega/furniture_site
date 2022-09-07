@@ -15,7 +15,7 @@ const  AboutUsSection1 = () => {
                 </div>
                 
             </motion.div>
-            <div><img src="../img/toa-heftiba-FV3GConVSss-unsplash.jpg" alt="image"/></div>
+            <div><img src="../img/living-room-with-yellow-armchair-empty-dark-blue-wall-background-3d-rendering.jpg" alt="image"/></div>
         </section>
      );
 }

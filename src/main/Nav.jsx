@@ -5,24 +5,9 @@ import {useState} from "react";
 import NavM from "./NavM";
 import{motion,AnimatePresence} from "framer-motion"
 const  NavBar = () => {
-<<<<<<< HEAD
     const [cart, setCart] = useState(false)
     const [user, setUser] = useState(false)
     const [dropDown, setDropDown] = useState(false)
-=======
-    return ( 
-        <nav className="navBar">
-            <div className="mainImg">
-                  <img src="img/main_logo.png" alt="company logo"/>  
-            </div>
-            <div className="navLink">       
-                <Link to="/">home</Link>
-                <Link to="/products">product</Link>
-                <Link to="/aboutus">about Us</Link>
-                <Link to="/contact">contact</Link>
-                <Link to="/cart">cart</Link>
-            </div>
->>>>>>> 414250be7690521aaf3488604d9f0f01ea1174e9
 
     return ( 
         <nav >

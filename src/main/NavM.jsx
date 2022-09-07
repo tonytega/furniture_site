@@ -18,7 +18,7 @@ const NavM = () => {
             exit={{y:-200}}
        
             >
-                <motion.a href="/auth" className="itm"
+                <motion.a href="/auth/login" className="itm"
                 onMouseEnter={()=> {setLogin(!login)}}
                 onMouseLeave={()=> {setLogin(!login)}}
                 whileHover={{
@@ -26,7 +26,7 @@ const NavM = () => {
                 }}
                 >{login? <IoLogIn className="itm"/> :<IoLogInOutline className="itm"/>}<span className="itm">log in</span>
                 </motion.a>
-                <motion.a href="/auth/login" className="itm"
+                <motion.a href="/auth/signup" className="itm"
                 onMouseEnter={()=> {setSignUp(!signUp)}}
                 onMouseLeave={()=> {setSignUp(!signUp)}}
                 whileHover={{
@@ -34,7 +34,7 @@ const NavM = () => {
                 }}
                 >{signUp ? <HiUserAdd className="itm"/> :<HiOutlineUserAdd className="itm"/>}<span className="itm">sign up</span>
                 </motion.a>
-                <motion.a href="/auth/signup" className="itm"
+                <motion.a href="/" className="itm"
                 onMouseEnter={()=> {setHelp(!help)}}
                 onMouseLeave={()=> {setHelp(!help)}}
                 whileHover={{

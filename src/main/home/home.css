@@ -96,7 +96,7 @@
 @media screen and (max-width: 500px) {
 }
 /* =======================================
-                offer slider
+                sliders
 ===========================================*/
 .offerSlider img {
   display: block;
@@ -109,53 +109,20 @@
   height: 350px;
   border-radius: 8px;
 }
-/* ==============================================================================================
-                home section 2
-=============================================================================================*/
 .horSlider {
-  height: 160px;
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   white-space: nowrap;
-}
-.rBtn {
-  font-size: 1px;
-  border-radius: 20px;
-  color: rgb(8, 7, 7);
-  height: 40px;
-  width: 40px;
-  filter: brightness(1.2);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-}
-.rBtn:hover {
-  filter: brightness(1);
-  background-color: #e8e4e4;
-}
-.rBtn2 {
-  left: 90%;
-}
-.rBtn1 {
-  right: 90%;
-  z-index: 1;
-}
-.horSlider > div:first-child > *,
-.horSlider > div:last-child > * {
-  width: 25px;
-  height: 25px;
+  /* border: 2px solid greenyellow; */
 }
 .cover {
   position: relative;
   display: inline-block;
   width: 98%;
-  height: 98%;
   margin: 0 auto;
-  /* background-color: #fff; */
+  background-color: rgb(163, 163, 163, 0.5);
   border-radius: 8px;
   margin-top: 20px;
   padding-top: 10px;
@@ -163,14 +130,39 @@
 }
 .scroll-images {
   width: 100%;
-  height: 90%;
-  display: flex;
+  /* background-color: blue; */
+  display: inline-flex;
   justify-content: left;
   align-items: center;
   overflow: auto;
   position: relative;
   scroll-behavior: smooth;
 }
+/* ==============================================================================================
+                home section 2
+=============================================================================================*/
+
+.rBtn {
+  border-radius: 20px;
+  color: rgb(81, 88, 98);
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rBtn:hover {
+  filter: brightness(1);
+  background-color: rgb(81, 88, 98, 0.5);
+}
+
+.horSlider > div:first-child > *,
+.horSlider > div:last-child > * {
+  width: 25px;
+  height: 25px;
+}
+
 .child {
   width: 150px;
   height: 90%;
@@ -183,9 +175,10 @@
 .scroll-images::-webkit-scrollbar {
   display: none;
 }
+
 .child img {
   width: 125px;
-  height: 100%;
+  height: 125px;
   border-radius: 8px;
 }
 
@@ -195,10 +188,103 @@
   flex-direction: column;
   margin-top: 40px;
 }
-.homeSection4 h1,
-.homeSection3 h1 {
+.homeSection4 > h1,
+.homeSection3 > h1 {
   background-color: rgb(81, 88, 98, 0.8);
   padding: 10px;
   border-radius: 8px;
   border: 2px solid black;
+}
+.homeSection2-btn-left {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: -4px;
+}
+.homeSection2-btn-right {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 97%;
+}
+/* ==============================================================================================
+                home section 3
+=============================================================================================*/
+
+.homeSection3-child {
+  display: inline-block;
+  /* border: 2px solid black; */
+  max-width: 170px;
+  margin: 0 10px;
+  min-height: 300px;
+  /* background-color: #fff; */
+  border-radius: 10px;
+}
+.homeSection3-child > div:first-child {
+  position: relative;
+  /* border: 2px solid rebeccapurple; */
+}
+.homeSection3-child > div > img {
+  max-width: 100%;
+  /* border: 2px solid greenyellow; */
+  display: block;
+  height: 200px;
+  border-radius: 8px;
+}
+.homeSection3-child > div:first-child > div {
+  position: absolute;
+  top: 185px;
+  left: 120px;
+  color: rgb(187, 183, 183);
+
+  background-color: rgb(81, 88, 98, 0.8);
+  /* border: 2px solid greenyellow; */
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.homeSection3-child > div:last-child {
+  display: inline-block;
+  color: rgb(187, 183, 183);
+  /* border: 2px solid greenyellow; */
+  width: 200px;
+}
+.homeSection3-child > div:last-child h3 {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 4px 0;
+}
+.homeSection3-child > div:last-child p {
+  font-size: 13px;
+}
+.homeSection3-btn-left {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: -3px;
+  color: rgb(81, 88, 98, 0.8);
+}
+.homeSection3-btn-right {
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  left: 98%;
+  color: rgb(81, 88, 98, 0.8);
+}
+/* ==============================================================================================
+ home section 4
+=============================================================================================*/
+.homeSection4-btn-left {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: -5px;
+  color: rgb(81, 88, 98, 0.8);
+}
+.homeSection4-btn-right {
+  position: absolute;
+  left: 97%;
+  top: 40%;
+
+  color: rgb(81, 88, 98, 0.8);
 }

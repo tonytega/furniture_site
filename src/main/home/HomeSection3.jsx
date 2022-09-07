@@ -32,25 +32,30 @@ const HomeSection3 = () => {
     return ( 
         <section className="horSlider fixedWidth-Homesection homeSection3">
             <h1>LATEST PRODUCTS</h1>
-            <div  className="rBtn rBtn1" onClick={slideLeft}>
-            <HiOutlineChevronDoubleLeft size={25}/>
-            </div>
             <div className="cover">
-                <div id= "slider3" className="scroll-images">
-                    {images.map((each)=>{
-                        return(
-                            <motion.div whileHover={{scale:1.1}} className="child"><img src={each}alt="categories"/></motion.div>
-
-                        )
-                       
-                    })}
-                    
-                    
-                    
+                <div  className="rBtn homeSection3-btn-left" onClick={slideLeft}>
+                    <HiOutlineChevronDoubleLeft size={25}/>
                 </div>
-            </div>
-            <div  className="rBtn rBtn2" onClick={slideRight}>
-            <HiOutlineChevronDoubleRight />
+                <div id= "slider3" className="scroll-images">
+                
+                    {images.map((each)=>{
+                        return(<motion.section className="homeSection3-child" whileHover={{scale:1.1}} >
+                                    <div ><img src={each}alt="categories"/><div><h3>300$</h3></div></div>
+                                    <div>
+                                        <h3>executive room</h3>
+                                        <p>Lorem ipsum dolor sit amet,<br/> consectetur adipisicing elit.<br/> Nobis, enim!</p>
+                                    </div>
+                                </motion.section>
+
+                        )  
+                    })}
+                </div>
+                <div className="rBtn homeSection3-btn-right" onClick={slideRight}>
+                 <HiOutlineChevronDoubleRight  size={25} />
+                </div>
+                </div>
+            <div >
+            
             </div>
         </section>
      );

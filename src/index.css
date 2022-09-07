@@ -6,7 +6,7 @@ body {
 * {
   margin: 0;
   font-family: helvetica;
-  box-sizing: border-box;
+  /* color: #333; */
 }
 h1 {
   font-size: 20px;
@@ -34,7 +34,6 @@ a {
 /* ===================================
                   nav bar 
 ======================================*/
-<<<<<<< HEAD
 nav {
   position: fixed;
   width: 100%;
@@ -63,27 +62,6 @@ nav {
   max-width: 100%;
 }
 
-=======
-.navBar {
-  height: 100px;
-  display: flex;
-  margin: 0 50px;
-  align-items: center;
-}
-.mainImg {
-  display: block;
-  /* min-width: 40%; */
-  flex-grow: 1;
-}
-
-.mainImg img {
-  width: 100px;
-  height: 100px;
-}
-/* .navBar div:last-child {
-  margin-top: 40px;
-} */
->>>>>>> 414250be7690521aaf3488604d9f0f01ea1174e9
 .navLink a {
   position: relative;
   padding-top: 6px;
@@ -96,14 +74,8 @@ nav {
   font-size: 17px;
   z-index: 1;
 }
-<<<<<<< HEAD
 .navLink {
   display: inline-block;
-=======
-a {
-  text-decoration: none;
-  /* color: inherit; */
->>>>>>> 414250be7690521aaf3488604d9f0f01ea1174e9
 }
 
 .navLink a::before {
@@ -270,4 +242,31 @@ a {
   width: 1200px;
   margin: 20px auto;
   display: flex;
+}
+/* ===================================
+             footer
+======================================*/
+.footer {
+  min-height: 100px;
+  display: inline-block;
+  border-top: 1px solid rgba(151, 157, 164, 0.8);
+  width: 100%;
+  background-color: rgb(81, 88, 98, 0.8);
+}
+.footer div:first-child {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  font-size: 12px;
+  float: left;
+}
+.footer div:last-child {
+  width: 50%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
 }

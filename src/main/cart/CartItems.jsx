@@ -1,6 +1,6 @@
-import { height } from '@mui/system'
-import { useState } from 'react'
-import { useEffect } from 'react'
+// import { height } from '@mui/system'
+// import { useState } from 'react'
+// import { useEffect } from 'react'
 import './CartItems.css'
 
 export const CartItems = ({cartArray,onIncrease,onDecrease})=>{

@@ -1,20 +1,21 @@
 import './SelectedCategory.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faCartShopping } from '@fortawesome/free-solid-svg-icons';
-
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 // const cartArray = []
 export const SelectedCategory =({categoryData,handleAddToCart})=>{
     const ratingArray = [1,2,3,4,5]
     let fiveStarRating
-    const calculateRacting = (rawRating)=>{
+    const calculateRating = (rawRating)=>{
          fiveStarRating = Math.floor((rawRating * 5) / 100)
     }
+   
     return(
         <div className='categoryData'>
             {
                 categoryData.map((item)=>{
-                    {calculateRacting(item.ratings)}
+                    {calculateRating(item.ratings)}
                     return(<div key={item.name} className='item'>
                        <h2> {item.name} </h2>
                        <div className='image1_container'><img src={item.image1} alt={item.name} className='image1'/></div>
@@ -42,7 +43,7 @@ export const SelectedCategory =({categoryData,handleAddToCart})=>{
                         <h3>${item.cost}</h3>
                         </div>
                         </div>
-                        <p><button className='product_details' >Product Details</button></p>
+                        <p><Link className='product_details' state={{productDetail : item}} to='/products/product_details'>Product Details</Link></p>
                     </div>)})
             }
         </div>

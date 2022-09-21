@@ -1,17 +1,16 @@
 .empty_cart_div {
   width: 90%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: auto;
 }
-/* div img{
-    /background-color: red;     anthony herreeeeeee div img affecting every one
+.empty_cart_image{
      width: 250px;
     height: 250px;
-} */
+}
 
 .empty_cart_p {
   font-size: xx-large;

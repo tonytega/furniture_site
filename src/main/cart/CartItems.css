@@ -7,29 +7,72 @@ h1{
     font-size: 50px;
     /* background-color:red */
 }
-.cart_container,.checkout_and_table{
-    width: 90%;
-    margin: auto;
+.cart_div{
+    position: relative;
     display: flex;
-    gap:10px
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    top: 100px;
+}
+.checkout_and_table{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap:20px;
+
 }
 .table{
+    position: relative;
     width: 70%;
+    display: flex;
+    flex-direction: column;
     height: 70vh;
     overflow-y: scroll;
+    /* background-color: red; */
+}
+
+.table_row_header,.table_row {
+    border-bottom: 1px solid#d6d1d1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+}
+.table_row_header {
+    position: sticky;
+    top: 0px;
+    padding-bottom: 10px;
+    background-color: rgba(246, 240, 227, 0.668);
+    /* width: 100%; */
+}
+.table_row:nth-child(2){
+   
+     margin-top: 20px;
+}
+.table_row td:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    
+ } 
+.table_row_header th,.table_row td{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
 }
 .checkout_container{
     padding: 10px;
     background-color: #f3f3f3;
     width: 30%;
     height: fit-content;
-    /* align-self: center; */
 }
 .information{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    /* justify-content: space-between; */
 }
 .information_styling{
     display: flex;
@@ -98,14 +141,22 @@ h1{
 }
 .number_div{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    height: fit-content;
     background-color: #d6d1d1;
-    padding: 5px;
+    /* padding: 5px; */
     border-radius: 10px;
     align-items: center;
 }
 .number_div p{
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 2px;
+    /* margin-left: 5px;
+    margin-right: 5px; */
     cursor: pointer;
+    
+}
+.increase_button,.decrease_button{
+    border: 1px solid;
+    border-radius: 50%;
 }

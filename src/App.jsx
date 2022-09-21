@@ -9,11 +9,17 @@ import { Cart } from './main/Cart';
 import Footer from './main/Footer';
 import Auth from './main/Auth';
 import {useEffect,useState,createContext} from 'react';
+import { useLocation } from 'react-router-dom';
+import { ProductDetail } from './main/product/productDetails';
 
 export const DataContext = createContext();
 function App() {
   const [cartArray,setCartArray] = useState([]) ;
    const [data,setData] = useState(null);
+   const [total,setTotal] = useState(0);
+   const {state} = useLocation();
+   const {productDetail} = state || {};
+
 useEffect(
   function fetchData(){
       fetch('../data/furniture_data.json',{
@@ -27,7 +33,15 @@ useEffect(
             .then((data)=>{setData(data)})
     },[cartArray]
 )
-
+useEffect(
+  ()=>{
+    let sum = 0
+    for (let item in cartArray){
+    sum = sum + cartArray[item].total
+    setTotal(sum)
+    }
+  },[cartArray]
+)
 const array = cartArray.slice()
 const handleAddToCart =(item)=>{
              const inArray = array.find((element)=>{
@@ -50,7 +64,15 @@ const handleAddToCart =(item)=>{
                       setCartArray(array)
                   }
                 }
-
+const handleRemoveFromCart = (item)=>{
+  const inArray = array.find(
+    (element)=>(
+      element.name === item.name
+    )
+      )
+      array.splice(array.indexOf(inArray),1);
+      setCartArray(array)
+}
 const handleIncrease =(item)=>{
   const inArray = array.find(
         (element)=>(
@@ -81,18 +103,23 @@ const handleDecrease =(item)=>{
   return (
     <div className="App">
        <DataContext.Provider value={data}>
-      <Router>
+      {/* <Router> */}
         <NavBar/>
         <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/auth/*' element={<Auth/>}/>
-        <Route path='/products' element={<Product  handleAddToCart={handleAddToCart}/>}/>
+        <Route path='/products' >
+          <Route index element={<Product  handleAddToCart={handleAddToCart}/>}/>
+          <Route path='product_details' element={<ProductDetail productDetail={productDetail} 
+                                        handleAddToCart={handleAddToCart} handleRemoveFromCart={handleRemoveFromCart}/>}/>
+        </Route>
         <Route path='/aboutUs' element={<AboutUS/>}/>
         <Route path='/contact' element={<Contact/>}/>
-        <Route path='/cart' element={<Cart cartArray={cartArray} onIncrease={handleIncrease} onDecrease={handleDecrease}/>}/>
+        <Route path='/cart' element={<Cart cartArray={cartArray} onIncrease={handleIncrease} 
+                                           onDecrease={handleDecrease} total={total}/>}/>
         </Routes>
         <Footer/>
-      </Router>
+      {/* </Router> */}
       </DataContext.Provider>
      
     </div>

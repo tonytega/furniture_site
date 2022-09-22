@@ -1,7 +1,11 @@
 body {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica Neue, Arial, sans-serif;
-  background-color: rgba(246, 240, 227, 0.668);
+  background: url(../img/living-room-with-yellow-armchair-empty-dark-blue-wall-background-3d-rendering.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(98, 99, 101, 0.824);
 }
 * {
   margin: 0;
@@ -36,8 +40,7 @@ a {
 ======================================*/
 nav {
   position: fixed;
-  width: 100%;
-  top : 40px;
+  width: 100vw;
   z-index: 1;
 }
 .navBack {
@@ -52,18 +55,19 @@ nav {
   display: inline-block;
   width: 60%;
   position: absolute;
-  bottom: 60%;
+  bottom: 50%;
+  /* border: 1px solid teal; */
 }
 .mainImg {
-  width: 40%;
+  width: 20%;
   display: inline-block;
 }
-.mainImg img {
+.mainImg > img {
   width: 100px;
   max-width: 100%;
 }
 
-.navLink a {
+.navLink > a {
   position: relative;
   padding-top: 6px;
   border-radius: 8px;
@@ -77,9 +81,10 @@ nav {
 }
 .navLink {
   display: inline-block;
+  margin-left: 175px;
 }
 
-.navLink a::before {
+.navLink > a::before {
   content: " ";
   position: absolute;
   background: #9a9a9a;
@@ -92,8 +97,8 @@ nav {
   z-index: -1;
   border-radius: 6px;
 }
-.navLink a:hover::before,
-.navLink a:focus::before {
+.navLink > a:hover::before,
+.navLink > a:focus::before {
   animation: 0.5s forwards ani2 linear;
 }
 @keyframes ani2 {
@@ -132,13 +137,17 @@ nav {
     opacity: 0.02;
   }
 }
+.nav-other-arrow {
+  visibility: hidden;
+}
+
 .userItm {
-  margin-left: 60px;
+  margin-left: 150px;
   display: inline-block;
   color: black;
 }
-.userItm div,
-.userItm a {
+.userItm > div,
+.userItm > a {
   text-transform: uppercase;
   margin-left: 15px;
   font-weight: bold;
@@ -154,12 +163,12 @@ nav {
   color: #333;
   position: absolute;
   border-radius: 8px;
-  top: 20px;
+  top: 30px;
   padding: 4px;
-  right: 110px;
+  right: -120px;
   z-index: 1;
 }
-.miniNav a {
+.miniNav > a {
   display: flex;
   padding: 6px;
   font-size: 14px;
@@ -192,82 +201,257 @@ nav {
   margin: 2px;
   cursor: pointer;
 }
-@media screen and (max-width: 500px) {
-  .navBack,
-  .navBar {
-    width: 100%;
-  }
-  .navLink a {
-    padding-top: 6px;
-    margin: 3px;
-    font-size: 13px;
-  }
-  .mainImg {
-    width: 20%;
-    display: inline-block;
-  }
-  .navBar {
-    display: flex;
-    width: 80%;
-    left: 10px;
-    flex-direction: column;
-    bottom: 30%;
-  }
-
-  .userItm div,
-  .userItm a {
-    margin-top: 10px;
-    margin-left: 25px;
-    font-weight: bold;
-    font-size: 13px;
-  }
-  .miniNav {
-    top: 35px;
-    z-index: 1;
-  }
-  .search {
-    top: 90%;
-    right: 40%;
-    position: absolute;
-    width: 100%;
-    z-index: 0;
-  }
-  .search input {
-    width: 80%;
-  }
+.search-icon:hover {
+  cursor: pointer;
 }
-/* ===================================
-              fixed width 
-======================================*/
-.fixedWidth {
-  width: 1200px;
-  margin: 20px auto;
-  display: flex;
+.search-visible {
+  visibility: visible;
+  transition: 0.5s ease-in;
+}
+.search-hidden {
+  visibility: hidden;
+  left: 100%;
+  transition: 0.5s ease-in;
 }
 /* ===================================
              footer
 ======================================*/
 .footer {
-  min-height: 100px;
   display: inline-block;
-  border-top: 1px solid rgba(151, 157, 164, 0.8);
-  width: 100%;
-  background-color: rgb(81, 88, 98, 0.8);
+  border-top: 1px solid rgba(151, 157, 164, 0.824);
+  width: 100vw;
+  background: url(../img/living-room-with-yellow-armchair-empty-dark-blue-wall-background-3d-rendering.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  /* border: 2px solid red; */
 }
-.footer div:first-child {
+.copyright {
+  border-top: 1px solid black;
+  background-color: rgba(151, 157, 164, 0.901);
+}
+.copyright div:first-child {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100px;
+  min-height: 50px;
   font-size: 12px;
   float: left;
 }
-.footer div:last-child {
+.copyright div:last-child {
   width: 50%;
   font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100px;
+  min-height: 50px;
+  text-align: center;
+}
+.footer-info {
+  /* border: 2px solid red; */
+  position: relative;
+  min-height: 150px;
+  width: 100%;
+  margin: auto;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 40px;
+  background-color: rgba(151, 157, 164, 0.496);
+}
+.footer-info > div {
+  display: inline-block;
+  /* border: 2px solid purple; */
+  width: 330px;
+  text-align: center;
+  padding-top: 10px;
+}
+.footer-info > div:first-child img {
+  width: 100px;
+}
+.footer-info > div:first-child {
+  text-align: center;
+}
+.footer-info > div:first-child h3 {
+  text-transform: capitalize;
+}
+
+.footer-info a {
+  cursor: pointer;
+}
+.footer-info > div:nth-child(2) h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.footer-info > div:last-child {
+  text-align: left;
+}
+.footer-info > div:last-child h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.footer-info > div:last-child span {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+/*=== queries reset==========*/
+.menu {
+  visibility: hidden;
+}
+/* ==============================================================================================
+                                            media querises
+=============================================================================================*/
+
+/* small tablet */
+@media screen and (max-width: 950px) {
+  body {
+    width: 375px;
+    object-fit: contain;
+    background: fixed;
+  }
+
+  .visibility-toggle-on {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease-in;
+  }
+  .visibility-toggle-off {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in;
+  }
+  nav {
+    width: 100vw;
+  }
+  .navBack {
+    /* border: 2px solid rgba(151, 157, 164, 0.8); */
+    width: 100vw;
+    margin: 0;
+  }
+  .navLink {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    margin: 0;
+  }
+  .navLink > a {
+    margin: 0 5px;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .navBar {
+    background-color: rgba(166, 166, 166, 0.386);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 55%;
+    top: 10%;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-left: 30px;
+    border-radius: 8px;
+    z-index: 1;
+  }
+  .search-icon {
+    visibility: hidden;
+  }
+  .mainImg {
+    width: 20%;
+  }
+  .userItm {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    margin: 0;
+  }
+  .userItm > div {
+    display: block;
+    margin-bottom: 10px;
+
+    width: 100%;
+  }
+  .menu-hidden {
+    visibility: hidden;
+    left: 100%;
+    transition: 0.5s ease-in;
+  }
+  .menu-visible {
+    visibility: visible;
+    transition: 0.5s ease-in;
+  }
+  .menu {
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+    width: 10%;
+    position: absolute;
+    margin-left: 70%;
+    top: 20px;
+    visibility: visible;
+    color: black;
+  }
+  .miniNav {
+    right: 0px;
+    align-items: center;
+    top: 180px;
+  }
+  .search {
+    width: 60%;
+    left: 20%;
+    margin-left: 22px;
+    top: 20px;
+    visibility: visible;
+  }
+  .search input {
+    width: 90%;
+  }
+  .search input::placeholder {
+    font-size: normal;
+  }
+  .footer {
+    width: 100vw;
+  }
+  .footer-info {
+    display: flex;
+    margin: 0;
+    padding-top: 0;
+  }
+  .footer-info > div:first-child {
+    border-right: 2px solid black;
+    width: 40%;
+  }
+  .footer-info div:nth-child(2) {
+    width: 20%;
+  }
+  .footer-info > div:last-child {
+    border-left: 2px solid black;
+    width: 40%;
+    padding-left: 3px;
+  }
+  .mb-2 span:first-child {
+    font-size: 14px;
+  }
+  .mb-2 span:last-child {
+    font-size: 10px;
+  }
+  .iconsF > a > * {
+    height: 15px;
+  }
+  .iconsF {
+    display: inline;
+  }
+  .liveChatWindow {
+    left: 27%;
+    height: 300px;
+    top: 280px;
+  }
+  .email-window {
+    background-position-x: 0;
+  }
 }

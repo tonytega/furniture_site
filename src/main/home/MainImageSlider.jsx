@@ -11,7 +11,7 @@ const MainImageSlider = () => {
         '../img/mimg6.jpg'
     ]
     setTimeout(()=>{
-setCurrentSlide(currentSlide=== 5? 0 : currentSlide +1)
+         setCurrentSlide(currentSlide=== 5? 0 : currentSlide +1)
     },6000)
     return ( 
         <div className="mainSlider" key="Mslider">
@@ -24,8 +24,7 @@ setCurrentSlide(currentSlide=== 5? 0 : currentSlide +1)
                     animate={{scale:1, opacity:1}} 
                     transition={{duration:0.5}}
                     exit={{opacity:0.5 ,scale:0.9}}
-                    />)} 
-               
+                    />)}                  
                </div>
                 )
             }

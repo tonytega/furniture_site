@@ -7,10 +7,13 @@ import AboutUS from './main/AboutUs';
 import Contact from './main/Contact';
 import { Cart } from './main/Cart';
 import Footer from './main/Footer';
-import Auth from './main/Auth';
 import {useEffect,useState,createContext} from 'react';
 import { useLocation } from 'react-router-dom';
 import { ProductDetail } from './main/product/productDetails';
+import LogIn from './main/log/LogIn';
+import SignUp from './main/log/SignUp';
+import SupportAdmin from './main/Live-chat-admin/SupportAdmin';
+
 
 export const DataContext = createContext();
 function App() {
@@ -21,6 +24,7 @@ function App() {
    const {productDetail} = state || {};
 
 useEffect(
+  
   function fetchData(){
       fetch('../data/furniture_data.json',{
                                                             headers: { 
@@ -106,17 +110,14 @@ const handleDecrease =(item)=>{
       {/* <Router> */}
         <NavBar/>
         <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/auth/*' element={<Auth/>}/>
-        <Route path='/products' >
-          <Route index element={<Product  handleAddToCart={handleAddToCart}/>}/>
-          <Route path='product_details' element={<ProductDetail productDetail={productDetail} 
-                                        handleAddToCart={handleAddToCart} handleRemoveFromCart={handleRemoveFromCart}/>}/>
-        </Route>
-        <Route path='/aboutUs' element={<AboutUS/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/cart' element={<Cart cartArray={cartArray} onIncrease={handleIncrease} 
-                                           onDecrease={handleDecrease} total={total}/>}/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/products' element={<Product  handleAddToCart={handleAddToCart}/>}/>
+          <Route path='/aboutUs' element={<AboutUS/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/cart' element={<Cart cartArray={cartArray} onIncrease={handleIncrease} onDecrease={handleDecrease}/>}/>
+          <Route path='/logIn' element={<LogIn/>}/>
+          <Route path='/SignUp' element={<SignUp/>}/>
+          <Route path='/support' element={<SupportAdmin/>}/>
         </Routes>
         <Footer/>
       {/* </Router> */}

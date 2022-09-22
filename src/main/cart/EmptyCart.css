@@ -6,10 +6,16 @@
   justify-content: center;
   align-items: center;
   margin: auto;
+  height: 100vh;
 }
-.empty_cart_image{
-     width: 250px;
-    height: 250px;
+.empty_cart_div img {
+  background-color: red; /* anthony herreeeeeee div img affecting every one fixed it buh check the css property*/
+  width: 250px;
+  height: 250px;
+}
+.empty_cart_image {
+  width: 250px;
+  height: 250px;
 }
 
 .empty_cart_p {
@@ -29,4 +35,13 @@
 .empty_cart_button:hover {
   color: #fff;
   background-color: #800080;
+}
+.mainCart {
+  height: 100vh;
+  background: url(../img/living-room-with-yellow-armchair-empty-dark-blue-wall-background-3d-rendering.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 100px;
+  color: black;
 }

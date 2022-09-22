@@ -7,7 +7,7 @@ const AboutUsSection5 = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo ea adipisci eos reprehenderit nemo quas laudantium molestias et temporibus?</p>
                 </div>
                 <div>
-                    <button className="btn btn-outline-secondary">check out</button>
+                    <button className="btn btn-outline-secondary aubtn">check out</button>
                 </div>
            </div>
            <div className="aboutUs-ImgSection5S">

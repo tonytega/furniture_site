@@ -10,12 +10,11 @@ const AboutUS = () => {
         <main className="aboutUs">
            <AboutUsSection1/>
            <div className="aboutUsFixedWidth">
-            <AboutUsSection3/>
-            <AboutUsSection2/>
-            <AboutUsSection5/>
-            <AboutUsSection6/>
+               <AboutUsSection3/>
+               <AboutUsSection2/>
+               <AboutUsSection5/>
+               <AboutUsSection6/>
            </div>
-
            <AboutUsSection4/>
         </main>
      );

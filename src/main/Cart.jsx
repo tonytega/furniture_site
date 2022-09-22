@@ -1,5 +1,6 @@
 import {CartItems} from './cart/CartItems'
 import {EmptyCart} from './cart/EmptyCart'
+import "./cart/EmptyCart.css"
 
 export const Cart = ({cartArray,onIncrease,onDecrease,total})=>(
     <>

@@ -16,22 +16,22 @@ const AboutUsSection4 = () => {
     const team =[
         {
             name:"Anthony Akpovire Ogenetega",
-            image:"",
+            image:"./img/CoDeveloper1.JPG",
             position:"Designer & Web Developer",
-            twitter:"",
+            twitter:"http://twitter.com/tonytega_ak",
             github:"",
-            portfolio:"",
+            portfolio:"http://anthonyakpovire.netlify.app",
             instagram:"",
             about:"Co-founder who always enjoys taking complicated websites & making the users experience simpler .been developing websites since day one (it seem's) "
         },
         {
             name:"Ola Olasunkanmi Abayomi",
-            image:"",
+            image:"./img/CoDeveloper2.jpg",
             position:"Designer & Web Developer",
-            twitter:"",
-            github:"",
-            portfolio:"",
-            instagram:"",
+            twitter:"https://mobile.twitter.com/ultra_nicx",
+            github:"github.com/nicxd531",
+            portfolio:"https://olaolasunkanmiportfolio.netlify.app/",
+            instagram:"https://www.instagram.com/nicx_ola",
             about:"Co-founder who always enjoys taking complicated websites & making the users experience simpler .been developing websites since day one (it seem's) "
         }
     ]
@@ -47,7 +47,7 @@ const AboutUsSection4 = () => {
                         initial={index ===0  ?{x:-300,type:''}:{x:300,type:''} }
                         animate={isActive ?{x:0}:{type:''} }
                         transition={{duration:0.7}}
-                        key={main.name}
+                        key={index}
                         >
                             <div><img src={main.image} alt="team image"/></div>
                             <h2 ref={myRef}>{main.name}</h2>
@@ -60,9 +60,7 @@ const AboutUsSection4 = () => {
                             </div>
                             <p >{main.about}</p>
                             <h3>co. designer</h3>
-
                          </ motion.div >
-
                     )
                 })}
 

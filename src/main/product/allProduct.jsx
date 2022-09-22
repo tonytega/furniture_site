@@ -2,9 +2,16 @@
 import { SelectedCategory } from "./SelectedCategory"
 import { useContext,useState } from "react"
 import { DataContext } from "..//../App"
-import { useEffect } from "react"
+import { useEffect} from "react"
+import ProductCategories from "../home/ProductCategories"
+import {HiMenu} from "react-icons/hi";
+import {GiSplitCross} from "react-icons/gi";
 
 export const AllProduct =({handleAddToCart})=>{
+  const [toggleCategories, setToggleCategories] = useState(false)
+  const handleToggleCategories=()=>{
+    setToggleCategories(!toggleCategories)
+  }
     const data = useContext(DataContext);
     // console.log(data)
     let dataArray;
@@ -23,12 +30,11 @@ export const AllProduct =({handleAddToCart})=>{
 
     return(
         <>
-        <div>
-            <ul>
-                {data ? dataArray.map(
-                    (key)=><li key={dataArray.indexOf(key)} ><a onClick={()=>{handleProductCategory(key)}}>{key}</a></li>) 
-                    : ''}
-            </ul>
+        <div className="main-Product-Categories">
+          {toggleCategories ? <GiSplitCross onClick={handleToggleCategories} size={40}/> :<HiMenu onClick={handleToggleCategories} size={40}/>}
+          <span  className={toggleCategories?"categories-on":"categories-off" }>
+          <ProductCategories/>
+          </span>
         </div>
         {<SelectedCategory categoryData={SelectedCategoryData} handleAddToCart={handleAddToCart}/>}
         </>

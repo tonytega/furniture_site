@@ -2,12 +2,7 @@
                 home section 1
 =============================================================================================*/
 .Home {
-  background: url(../img/living-room-with-yellow-armchair-empty-dark-blue-wall-background-3d-rendering.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   padding-top: 100px;
-  padding-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +16,6 @@
 }
 .welcome {
   margin: auto 0;
-
   padding: 100px;
   font-size: 20px;
   display: flex;
@@ -51,6 +45,7 @@
   margin: 0 auto;
   border-radius: 8px;
   padding: 100px 10px;
+  padding-bottom: 170px;
   width: 100%;
 }
 .fixedWidth-Homesection {
@@ -93,8 +88,6 @@
   align-items: center;
 }
 
-@media screen and (max-width: 500px) {
-}
 /* =======================================
                 sliders
 ===========================================*/
@@ -125,7 +118,7 @@
   background-color: rgb(163, 163, 163, 0.5);
   border-radius: 8px;
   margin-top: 20px;
-  padding-top: 10px;
+  padding: 5px 0;
   z-index: 0;
 }
 .scroll-images {
@@ -137,6 +130,10 @@
   overflow: auto;
   position: relative;
   scroll-behavior: smooth;
+  padding: 10px;
+}
+.main-home-category-toggle {
+  visibility: hidden;
 }
 /* ==============================================================================================
                 home section 2
@@ -190,10 +187,11 @@
 }
 .homeSection4 > h1,
 .homeSection3 > h1 {
-  background-color: rgb(81, 88, 98, 0.8);
+  background-color: none;
   padding: 10px;
-  border-radius: 8px;
-  border: 2px solid black;
+  border-radius: 12px;
+  color: #fff;
+  border: 2px solid #707070;
 }
 .homeSection2-btn-left {
   position: absolute;
@@ -210,30 +208,35 @@
 /* ==============================================================================================
                 home section 3
 =============================================================================================*/
-
+.homeSection3-child:hover {
+  box-shadow: 0px 0px 8px #ecd9d9;
+}
 .homeSection3-child {
   display: inline-block;
   /* border: 2px solid black; */
   max-width: 170px;
   margin: 0 10px;
-  min-height: 300px;
-  /* background-color: #fff; */
+  min-height: fit-content;
+  background-color: rgb(178, 181, 184, 0.6);
   border-radius: 10px;
+  padding: 4px;
 }
 .homeSection3-child > div:first-child {
   position: relative;
+  margin: 20px 0;
+  max-width: fit-content;
   /* border: 2px solid rebeccapurple; */
 }
 .homeSection3-child > div > img {
   max-width: 100%;
   /* border: 2px solid greenyellow; */
   display: block;
-  height: 200px;
   border-radius: 8px;
+  object-fit: contain;
 }
 .homeSection3-child > div:first-child > div {
   position: absolute;
-  top: 185px;
+  top: 175px;
   left: 120px;
   color: rgb(187, 183, 183);
 
@@ -243,18 +246,19 @@
   border-radius: 6px;
 }
 
-.homeSection3-child > div:last-child {
+.homeSection3-child > div:nth-child(2) {
   display: inline-block;
-  color: rgb(187, 183, 183);
   /* border: 2px solid greenyellow; */
-  width: 200px;
+  width: fit;
 }
-.homeSection3-child > div:last-child h3 {
+.homeSection3-child > div:nth-child(2) h3 {
   font-weight: bold;
   text-transform: capitalize;
+  max-width: fit-content;
+  display: inline;
   margin: 4px 0;
 }
-.homeSection3-child > div:last-child p {
+.homeSection3-child > div:nth-child(2) p {
   font-size: 13px;
 }
 .homeSection3-btn-left {
@@ -271,6 +275,9 @@
   left: 98%;
   color: rgb(81, 88, 98, 0.8);
 }
+.s400px {
+  visibility: hidden;
+}
 /* ==============================================================================================
  home section 4
 =============================================================================================*/
@@ -285,6 +292,131 @@
   position: absolute;
   left: 97%;
   top: 40%;
-
   color: rgb(81, 88, 98, 0.8);
+}
+
+/* ==============================================================================================
+                                            media querises
+=============================================================================================*/
+/* small tablet */
+@media screen and (max-width: 950px) {
+  /*================home============*/
+  .fixedWidth {
+    width: 100vw;
+    padding: 0 5%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .Home {
+    height: fit-content;
+    width: 100vw;
+
+    background: url(../img/living-room-with-yellow-armchair-empty-dark-blue-wall-background-3d-rendering.jpg);
+  }
+  .Home > div:first-child {
+    height: fit-content;
+  }
+  .welcome {
+    min-width: 375px;
+    height: 100vh;
+    padding: 0;
+
+    justify-items: center;
+  }
+  .welcome span:first-child {
+    font-size: 60px;
+  }
+  .welcome span:last-child {
+    font-size: 20px;
+  }
+
+  .Home > div:last-child {
+    padding: 0;
+    background: none;
+  }
+  .homeSection1 > div:first-child,
+  .homeSection1 > div:last-child {
+    visibility: hidden;
+    position: absolute;
+    padding: 0;
+  }
+  .homeSection1 {
+    width: 100%;
+  }
+  .homeSection1 > div:nth-child(2) {
+    width: 100%;
+  }
+  .homeSection4,
+  .homeSection3 {
+    max-width: 100%;
+  }
+  .mainSlider > img {
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+  }
+  .mainSlider {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .horSlider {
+    width: 100%;
+  }
+  .cover {
+    width: 100%;
+    padding: 0px;
+  }
+  .scroll-images {
+    padding: 0px;
+  }
+  .child img {
+    height: 70px;
+    width: 70px;
+  }
+  .homeSection2-btn-right,
+  .homeSection4-btn-right,
+  .homeSection3-btn-right {
+    left: 93%;
+  }
+  .rBtn > * {
+    height: 20px;
+  }
+  .homeSection3-child {
+    height: fit-content;
+    width: 93;
+  }
+  .homeSection3-child > div > img {
+    height: 58px;
+    width: 86px;
+  }
+  .homeSection3-child > div:nth-child(2) {
+    object-fit: cover;
+  }
+  .homeSection3-child > div:nth-child(2) h3 {
+    font-size: 10px;
+  }
+  .homeSection3-child > div:nth-child(2) p {
+    font-size: 7px;
+    width: 90px;
+    object-fit: cover;
+  }
+  .homeSection3-child > div:first-child > div {
+    top: 55px;
+  }
+  .homeSection3-child > div:first-child > div > h3 {
+    font-size: 10px;
+  }
+  .ratings {
+    padding-bottom: 4px;
+    width: 50px;
+  }
+}
+/* large tablet and laptops */
+@media screen and (min-width: 960px) {
+}
+/* desktop styles */
+@media screen and (min-width: 1200px) {
 }

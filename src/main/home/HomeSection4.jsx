@@ -33,15 +33,14 @@ const HomeSection4 = () => {
                     <HiOutlineChevronDoubleLeft size={25}/>
                 </div>
                 <div id= "slider2" className="scroll-images">
-                    {images.map((each)=>{
+                    {images.map((each,index)=>{
                             return(
-                                <motion.div whileHover={{scale:1.1}} className="child"><img src={each}alt="categories"/></motion.div>
+                                <motion.div key={index} whileHover={{scale:1.1}} className="child"><img src={each}alt="categories"/></motion.div>
                             )
-                        
                         })}                                                                      
                 </div>
                 <div   className="rBtn homeSection4-btn-right" onClick={slideRight}>
-                <HiOutlineChevronDoubleRight size={25}/>
+                    <HiOutlineChevronDoubleRight size={25}/>
                 </div>
             </div>
             <div >

@@ -1,6 +1,6 @@
 import './Contact.css'
-import { motion } from 'framer-motion';
-import { Gradient } from '@mui/icons-material';
+// import { motion } from 'framer-motion';
+// import { Gradient } from '@mui/icons-material';
 const Contact = () => {
     return ( 
         <section className='contact_us_container'>

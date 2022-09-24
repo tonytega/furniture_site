@@ -1,9 +1,9 @@
 import './productDetails.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faStar,faHeart,faCartPlus,faCancel} from '@fortawesome/free-solid-svg-icons'
-import { useState,useRef,forwardRef } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 
 
 

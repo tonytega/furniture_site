@@ -298,27 +298,28 @@ nav {
 }
 /*=== queries reset==========*/
 .menu {
-  visibility: hidden;
+  display: none;
 }
 /* ==============================================================================================
                                             media querises
 =============================================================================================*/
 
 /* small tablet */
+
 @media screen and (max-width: 950px) {
   body {
-    width: 375px;
+    width: 100vw;
     object-fit: contain;
     background: fixed;
   }
 
   .visibility-toggle-on {
-    visibility: visible;
+    display: inline-block;
     opacity: 1;
     transition: 0.5s ease-in;
   }
   .visibility-toggle-off {
-    visibility: hidden;
+    display: none;
     opacity: 0;
     transition: 0.5s ease-in;
   }
@@ -347,8 +348,8 @@ nav {
     position: absolute;
     display: flex;
     flex-direction: column;
-    left: 55%;
-    top: 10%;
+    right: 0%;
+    top: 100%;
     height: fit-content;
     width: fit-content;
     justify-content: center;
@@ -378,7 +379,7 @@ nav {
   }
   .menu-hidden {
     visibility: hidden;
-    left: 100%;
+    right: -40%;
     transition: 0.5s ease-in;
   }
   .menu-visible {
@@ -391,9 +392,9 @@ nav {
     z-index: 1;
     width: 10%;
     position: absolute;
-    margin-left: 70%;
+    margin-left: 68%;
     top: 20px;
-    visibility: visible;
+    display: inline-block;
     color: black;
   }
   .miniNav {

@@ -43,7 +43,7 @@ export const SelectedCategory =({categoryData,handleAddToCart})=>{
                         <h3>${item.cost}</h3>
                         </div>
                         </div>
-                        <p><Link className='product_details' state={{productDetail : item}} to='/products/product_details'>Product Details</Link></p>
+                        <p><Link className='product_details' state={{productDetail : item}} to='/product_details'>Product Details</Link></p>
                     </div>)})
             }
         </div>

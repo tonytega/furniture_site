@@ -276,7 +276,7 @@
   color: rgb(81, 88, 98, 0.8);
 }
 .s400px {
-  visibility: hidden;
+  display: none;
 }
 /* ==============================================================================================
  home section 4
@@ -336,7 +336,7 @@
   }
   .homeSection1 > div:first-child,
   .homeSection1 > div:last-child {
-    visibility: hidden;
+    display: none;
     position: absolute;
     padding: 0;
   }

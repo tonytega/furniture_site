@@ -26,7 +26,7 @@ function App() {
 useEffect(
   
   function fetchData(){
-      fetch('../data/furniture_data.json',{
+      fetch('data/furniture_data.json',{
                                                             headers: { 
                                                                       'Content-Type': 'application/json',
                                                                         'Accept': 'application/json'
@@ -118,6 +118,7 @@ const handleDecrease =(item)=>{
           <Route path='/logIn' element={<LogIn/>}/>
           <Route path='/SignUp' element={<SignUp/>}/>
           <Route path='/support' element={<SupportAdmin/>}/>
+          <Route path='/product_details' element={<ProductDetail productDetail={productDetail} handleAddToCart={handleAddToCart} handleRemoveFromCart={handleRemoveFromCart}/>}/>
         </Routes>
         <Footer/>
       {/* </Router> */}

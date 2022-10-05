@@ -293,12 +293,17 @@ nav {
   font-weight: bold;
 }
 .footer-info > div:last-child span {
-  font-weight: bold;
   text-transform: capitalize;
 }
-/*=== queries reset==========*/
+.footer-info > div:last-child p > span:nth-child(2) {
+  font-size: 12px;
+}
+/*====== queries reset==========*/
 .menu {
   display: none;
+}
+.addresses {
+  font-weight: bold;
 }
 /* ==============================================================================================
                                             media querises

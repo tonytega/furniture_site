@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import {BsCart, BsCartFill} from "react-icons/bs";
 import {HiUser, HiOutlineUser, HiOutlineChevronDoubleDown , HiOutlineChevronDoubleUp,HiOutlineSearch} from "react-icons/hi";
-import {useState} from "react";
+import {useState,useRef,useEffect } from "react";
 import NavM from "./NavM";
 import{motion,AnimatePresence} from "framer-motion"
 import LiveChat from "./LiveChat/LiveChat";
@@ -14,6 +14,7 @@ const  NavBar = () => {
     const [liveChat, setLiveChat] = useState(false)
     const visible =liveChat
     const [toggleCategories, setToggleCategories] = useState(false)
+    const ref =useRef(null)
   const handleToggleCategories=()=>{
     setToggleCategories(!toggleCategories)
   }
@@ -24,6 +25,17 @@ const  NavBar = () => {
         setLiveChat(false)
     }
     const handleOutsideClick = ()=>setDropDown(false)
+    useEffect(() => {
+        function handleClickOutside(event) {
+         if(ref.current && !ref.current.contains(event.target)){setToggleCategories(false),setSearch(false)}
+         
+        }
+        document.addEventListener("mousedown",handleClickOutside);
+        return()=>{
+         document.removeEventListener("mousedown",handleClickOutside);
+        };
+      
+     }, [ref])
 
     return ( 
         <nav >
@@ -31,7 +43,7 @@ const  NavBar = () => {
                 <div className="mainImg">
                  <img src="img/main_logo.png" alt="company logo"/>  
                 </div>
-                <div className={`navBar ${toggleCategories?"menu-visible":"menu-hidden"}`}>
+                <div ref={ref}  className={`navBar ${toggleCategories?"menu-visible":"menu-hidden"}`}>
                     <div className="navLink">       
                         <Link to="/">home</Link>
                         <Link to="/products">product</Link>
@@ -58,7 +70,7 @@ const  NavBar = () => {
                     </div>
                     <span className="search-icon" onClick={()=>{setSearch(!search)}}><HiOutlineSearch className="m-2" size={20}/></span> 
                 </div>
-              <div className={`search ${search? "search-visible":"search-hidden"}` }>
+              <div ref={ref} className={`search ${search? "search-visible":"search-hidden"}` }>
                     <input
                         placeholder="search products ,categories and brand"
                         type="search"

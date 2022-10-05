@@ -22,8 +22,8 @@ const Footer = () => {
             </div>
             <div>
               <h2 className="mb-2">visit us</h2>
-              <p className="mb-2"> <span>head office:</span><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis architecto quia itaque officia iste omnis delectus id facilis dolores?</span></p>
-              <p className="mb-2"><span>branch office:</span><span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem nihil hic quisquam natus est error earum modi commodi explicabo?</span></p>
+              <p className="mb-2"> <span className="addresses">head office:</span><span >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis architecto quia itaque officia iste omnis delectus id facilis dolores?</span></p>
+              <p className="mb-2"><span className="addresses">branch office:</span><span > Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem nihil hic quisquam natus est error earum modi commodi explicabo?</span></p>
             </div>
           </section>
           <section className="copyright">

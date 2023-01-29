@@ -39,11 +39,11 @@ const  NavBar = () => {
 
     return ( 
         <nav >
-            <div className="navBack">
+            <div ref={ref} className="navBack">
                 <div className="mainImg">
                  <img src="img/main_logo.png" alt="company logo"/>  
                 </div>
-                <div ref={ref}  className={`navBar ${toggleCategories?"menu-visible":"menu-hidden"}`}>
+                <div   className={`navBar ${toggleCategories?"menu-visible":"menu-hidden"}`}>
                     <div className="navLink">       
                         <Link to="/">home</Link>
                         <Link to="/products">product</Link>
